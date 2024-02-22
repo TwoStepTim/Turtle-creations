@@ -1,0 +1,96 @@
+body{
+    background-color: #efebe0;
+    font-family: "EB Garamond", serif;
+    overflow-x: hidden;
+}
+.border{
+    width: 100%;
+    min-height: 15px;
+    background-color: #ac6239;
+}
+/* Center the navbar brand */
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 5vh;
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+}
+  
+
+.navbar-brand img {
+    margin-left: 5px;
+}
+
+
+
+/* Navbar */
+.navbar {
+    background-color: transparent !important; /* Remove background color */
+    font-size: 1.5vw;
+    margin-bottom: 100px;
+}
+
+
+/* Shopping cart icon */
+.navbar-nav {
+    position: relative;
+    /* Adjust padding to make space for the shopping cart icon on the right */
+    padding-right: 00px;
+}
+
+
+.header img{
+    width: 25vw;
+}
+.header-box {
+    border: 1px solid #ccc; /* Add a border around the box */
+    padding: 15px; /* Add some padding to the box */
+}
+
+.header-box h4 {
+    margin-bottom: 0; /* Remove bottom margin from the h4 element to prevent extra spacing */
+}
+
+.products img{
+    width: 10vw;
+}
+
+.widepic{
+    background-image: url(/img/Bottom_Full.png);
+    height: 10vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+}
+
+.container {
+    margin-top: 50px; /* Adjust the top margin as needed */
+  }
+  
+.img-fluid {
+    max-width: 100%; /* Ensure the image stays within its container */
+}
+
+h2 {
+    color: #333; /* Header color */
+}
+
+p {
+color: #666; /* Paragraph color */
+}
+
+.About{
+    font-size: 1.5vw;
+}
+.About .row{
+
+    width: 50vw;
+}
