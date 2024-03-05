@@ -9,7 +9,9 @@ body{
     background-color: #ac6239;
 }
 /* Center the navbar brand */
-
+a {
+  color: black;
+}
 .navbar-brand {
     display: flex;
     align-items: center;
@@ -75,8 +77,13 @@ body{
   }
   
 .img-fluid {
-    max-width: 100%; /* Ensure the image stays within its container */
-    margin-bottom: 10vw;
+    margin-bottom: 2vw;
+}
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 h2 {
@@ -184,7 +191,17 @@ color: #666; /* Paragraph color */
   }
   footer{
     background-color: rgba(244, 175, 96, 0.482);
+    
   }
+.filters {
+    display: flex;
+}
+.box {
+    flex: 1;
+    border: 1px solid #000;
+    text-align: center;
+    cursor: pointer;
+}
   @media screen and (max-width: 680px) {
     .hamburger {
       display: block;
@@ -214,5 +231,8 @@ color: #666; /* Paragraph color */
     footer{
       margin-top: 30vw;
     }
+    .img-fluid {
+      margin-bottom: 10vw;
+  }
   }
   
