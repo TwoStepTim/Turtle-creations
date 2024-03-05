@@ -211,5 +211,8 @@ color: #666; /* Paragraph color */
         height: 50vw;
         
     }
+    footer{
+      margin-top: 30vw;
+    }
   }
   
