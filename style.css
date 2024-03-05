@@ -64,9 +64,8 @@ body{
 }
 
 .widepic{
-    background-image: url(/img/Bottom_Full.png);
     height: 10vw;
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
     width: 100vw;
 }
@@ -77,6 +76,7 @@ body{
   
 .img-fluid {
     max-width: 100%; /* Ensure the image stays within its container */
+    margin-bottom: 10vw;
 }
 
 h2 {
@@ -94,3 +94,122 @@ color: #666; /* Paragraph color */
 
     width: 50vw;
 }
+/* Custom CSS for mobile responsiveness */
+.navbar-brand img {
+    height: 50px; /* Adjust the height of the logo for mobile */
+  }
+  
+  .navbar_moblie {
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 0vw;
+    margin-top: 0vw;
+    height: 100vh;
+    width: 70vw;
+    z-index: 100;
+    opacity: 0;
+    transform: translatex(-100%);
+    transition: opacity 0.5s, transform 0.5s;
+  }
+  
+  .animate {
+    animation: fadeInDown 0.5s ease-out; /* Add the animation */
+  }
+  
+  @keyframes fadeInDown {
+    from {
+      opacity: 0;
+      transform: translateY(-100%);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .navbar_moblie ul {
+    list-style: none;
+    padding: 0;
+    padding-top: 50px;
+  }
+  
+  .navbar_moblie li {
+    padding-bottom: 20px;
+    text-align: justify;
+    margin: 0 15px;
+    opacity: 100%;
+  }
+  
+  .navbar_moblie a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    transition: color 0.3s;
+    word-spacing: 10px;
+    font-size: 5vw;
+    opacity: 100%;
+    font-weight: 300;
+  }
+  
+  .navbar_moblie p {
+    font-size: 3vw;
+    padding: 5px;
+  }
+  
+  .hamburger {
+    font-size: 24px;
+    display: none;
+    cursor: pointer;
+    margin-left: 20px;
+    position: absolute; /* Position the hamburger icon */
+    top: 10px; /* Adjust the top position as needed */
+    left: 20px; /* Adjust the left position as needed */
+    z-index: 101; /* Ensure the hamburger is above the navbar */
+  }
+  
+  /* Add a style for when the checkbox is checked */
+  #sidebar-checkbox:checked + .navbar_moblie {
+    opacity: 1; /* Make it visible */
+    transform: translatex(0); /* Reset the transform to make it appear */
+  }
+  
+  /* Style for the navigation bar when checkbox is unchecked */
+  #sidebar-checkbox:not(:checked) + .navbar_moblie {
+    opacity: 0; /* Initially set opacity to 0 */
+    transform: translatex(-100%); /* Move the navbar up initially */
+    transition: opacity 0.5s, transform 0.5s; /* Add transitions for opacity and transform */
+  }
+  footer{
+    background-color: rgba(244, 175, 96, 0.482);
+  }
+  @media screen and (max-width: 680px) {
+    .hamburger {
+      display: block;
+    }
+    .navbar {
+      display: none;
+    }
+    .navbar-brand {
+        display: block !important; /* Ensure the navbar brand is always visible */
+        text-align: center; /* Center the navbar brand */
+
+      }
+    .navbar-brand img {
+        display: block;
+        height: 35vw; /* Adjust the height of the logo for mobile */
+        margin-top: 30vh; /* Adjust the margin-top to move the logo down */
+
+    }
+    .navbar{
+        margin-bottom: 30vh;
+    }
+    .widepic img{
+        object-fit: cover;
+        height: 50vw;
+        
+    }
+  }
+  
